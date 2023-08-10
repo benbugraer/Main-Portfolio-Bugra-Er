@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap');
+@import "conf";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.fa-brands {
+  font-size: 35px;
+}
+.header {
+  background: #151515  url("../images/intro-bg-5.jpg") no-repeat center center/cover;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.header .text-container {
+  z-index: 10;
+}
+.header .social {
+  bottom: 50px;
+}
+
+.h {
+  &-sass  {
+    color: $sass-color;
+  }
+  &-bootstrap {
+    color: $bootstrap-color;
+  }
+  &-js {
+    color: $js-color;
+  }
+  &-react {
+    color: $react-color;
+  }
+}
+// Buttons 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 100px;
+  &:hover {
+    transition: all 0.4s linear ;
+    color: #ffffff;
+  }
+  &-primary:hover {
+    background: #ffffff;
+    color:  #ff5757 ;
+    border: 1px solid #ff5757;
+  }
+  &-outline-primary {
+    background: #ffffff;
+    color: #ff5757;
+    font-size: 25px;
+    &:hover {
+      color: #ffffff;
+      border: 1px solid #fff;
+
+    }
+  }
+  &-secondary:hover {
+    color: #6fda44;
+    background: #ffffff;
+    border: 1px solid #6fda44;
+    }
+  &-success:hover {
+    color: #39ff8b;
+    background: #ffffff;
+    border: 1px solid #39ff8b;
+  }
+}
+// Social Media Styling
+.fab {
+  color: #ffffff;
+}
+.fa {
+  &-facebook:hover, &-square-facebook:hover {
+    color:  #3b5998;
+  }
+  &-instagram:hover, &-square-instagram:hover {
+    color: #E1306C;
+  }
+  &-twitter:hover, &-square-twitter:hover {
+    color: #1DA1F2;
+  }
+  &-youtube:hover{
+    color: #FF0000;
+  }
+  &-linkedin:hover {
+    color: #0077b5;
+  }
+  &-github:hover, &-square-github:hover {
+    opacity: 0.6;
+  }
+  &-twitch:hover {
+    color: #6441A4;
+  }
+  &-html5 {
+    color: $html-color;
+  }
+  &-css3-alt {
+    color: $css-color ;
+  }
+  &-sass {
+    color: $sass-color;
+  }
+  &-bootstrap {
+    color: $bootstrap-color;
+  }
+  &-js {
+    color: $js-color;
+  }
+  &-react {
+    color: $react-color;
+  }
+  &-vuejs {
+    color:  $vue-color;
+  }
+  &-flip {
+    transform: scaleX(-1);
+  }
+  &-meta {
+    color: #0668E1;
+  }
+  &-cubes {
+    color: #5CB85C;
+  }
+  &-clock {
+    color: #E97451;
+  }
+  &-circle-user {
+    color: #F6D092;
+  }
+ 
+}
+.html {
+  background: $html-color;
+}
+.css {
+  background: $css-color;
+}
+.sass {
+  background: $sass-color;
+}
+.bootstrap {
+  background: $bootstrap-color;
+}
+.js {
+  background: $js-color;
+}
+.react {
+  background: $react-color;
+}
+.vue {
+  background: $vue-color;
+}
+
+// About Content
+.about-img {
+  width: 285px;
+  border: 2px solid #fff;
+}
+.about-content .lead {
+  font-size: 25px;
+}
+// Project Styling
+.project {
+  transition: all 0.5s linear;
+}
+.project:hover {
+  transform: scale(1.05);
+  transition: all 0.3s linear;
+  opacity: 0.7;
+}
+// Freelance Section
+.service-i {
+  font-size: 75px ;
+  transition: transform 0.4s linear;
+  cursor: pointer;
+}
+.git-hub {
+  color: #151515;
+}
+@media  (max-width: 1000px) {
+  .header .social i {
+    font-size: 30px ;
+  }
+  .btn-primary {
+    text-align: center;
+  }
+  .stats .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: #ffffff solid 2px;
+    padding-bottom: 20px  ;
+    font-size: 25px ;
+  }
+  .stats  .stat .fa-3x {
+    font-size: 65px ;
+  }
+  .services .fa-brands {
+    font-size: 65px;
+  }
+  .header .roles .fs-2 {
+    font-size: 10px;
+  }
+}
