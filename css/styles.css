@@ -211,12 +211,12 @@ a {
 }
 
 .copyright span {
-  transition: all 0.2s linear;
+  transition: color 0.3s linear;
 }
 
 .copyright span:hover {
-  transition: all 0.2s linear;
-  color: #ffffff;
+  color: #333;
+  transition: color 0.3s linear;
 }
 
 @media (max-width: 1000px) {
