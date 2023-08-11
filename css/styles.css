@@ -90,13 +90,13 @@ a {
   color: #ffffff;
 }
 
-.fa-facebook:hover, .fa-square-facebook:hover {
+.fa-facebook:hover {
   color: #3b5998;
 }
-.fa-instagram:hover, .fa-square-instagram:hover {
+.fa-instagram:hover {
   color: #E1306C;
 }
-.fa-twitter:hover, .fa-square-twitter:hover {
+.fa-twitter:hover {
   color: #1DA1F2;
 }
 .fa-youtube:hover {
@@ -105,7 +105,7 @@ a {
 .fa-linkedin:hover {
   color: #0077b5;
 }
-.fa-github:hover, .fa-square-github:hover {
+.fa-github:hover {
   opacity: 0.6;
 }
 .fa-twitch:hover {
@@ -146,6 +146,11 @@ a {
 }
 .fa-circle-user {
   color: #F6D092;
+}
+
+.footer-social .fab:hover {
+  color: white;
+  opacity: 1;
 }
 
 .html {
@@ -203,6 +208,15 @@ a {
 
 .git-hub {
   color: #151515;
+}
+
+.copyright span {
+  transition: all 0.2s linear;
+}
+
+.copyright span:hover {
+  transition: all 0.2s linear;
+  color: #ffffff;
 }
 
 @media (max-width: 1000px) {

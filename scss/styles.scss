@@ -88,13 +88,13 @@ a {
   color: #ffffff;
 }
 .fa {
-  &-facebook:hover, &-square-facebook:hover {
+  &-facebook:hover {
     color:  #3b5998;
   }
-  &-instagram:hover, &-square-instagram:hover {
+  &-instagram:hover {
     color: #E1306C;
   }
-  &-twitter:hover, &-square-twitter:hover {
+  &-twitter:hover {
     color: #1DA1F2;
   }
   &-youtube:hover{
@@ -103,7 +103,7 @@ a {
   &-linkedin:hover {
     color: #0077b5;
   }
-  &-github:hover, &-square-github:hover {
+  &-github:hover {
     opacity: 0.6;
   }
   &-twitch:hover {
@@ -145,7 +145,11 @@ a {
   &-circle-user {
     color: #F6D092;
   }
- 
+}
+
+.footer-social .fab:hover{
+  color: white;
+  opacity: 1;
 }
 .html {
   background: $html-color;
@@ -194,6 +198,13 @@ a {
 }
 .git-hub {
   color: #151515;
+}
+.copyright span {
+  transition: all 0.2s linear;
+}
+.copyright span:hover {
+  transition: all 0.2s linear;
+  color: #ffffff;
 }
 @media  (max-width: 1000px) {
   .header .social i {

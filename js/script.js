@@ -41,12 +41,11 @@ const sociCons = document.querySelectorAll(".footer a i");
 sociCons.forEach((icon) => {
   icon.addEventListener("mouseover", () => {
     icon.classList.add("fa-beat");
-    icon.style.transition = "all 0.5s ease-in";
+    icon.style.transition = "all 0.3s linear";
   });
 
   icon.addEventListener("mouseout", () => {
     icon.classList.remove("fa-beat");
-    icon.style.transition = "all 0.5s ease-in";
   });
 });
 // Service Icons Hover
