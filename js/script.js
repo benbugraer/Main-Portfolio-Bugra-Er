@@ -3,7 +3,7 @@
 function runTypingEffect() {
   const text = "I am BUGRA ER";
   const typingElement = document.getElementById("typing-text");
-  const typingDelay = 175;
+  const typingDelay = 80;
   typeText(text, typingElement, typingDelay);
 }
 
