@@ -40,12 +40,12 @@ const sociCons = document.querySelectorAll(".footer a i");
 
 sociCons.forEach((icon) => {
   icon.addEventListener("mouseover", () => {
-    icon.classList.add("fa-beat");
+    icon.classList.add("fa-shake");
     icon.style.transition = "all 0.3s linear";
   });
 
   icon.addEventListener("mouseout", () => {
-    icon.classList.remove("fa-beat");
+    icon.classList.remove("fa-shake");
   });
 });
 // Service Icons Hover
@@ -62,3 +62,15 @@ for (const icon of serviceIcons) {
     icon.style.transition = "all 0.4s linear";
   });
 }
+
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.style.background = "#ff5757";
+    navbar.style.transition = "all 0.4s linear";
+    navbar.classList.add("navbar-sticky");
+  } else {
+    navbar.style.background = "transparent";
+    navbar.classList.remove("navbar-sticky");
+  }
+});

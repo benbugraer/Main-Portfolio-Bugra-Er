@@ -11,58 +11,76 @@
     <title>Buğra Er | Front-End Developer</title>
   </head>
   <body>
-    <header class="header vh-100 text-center position-relative">
-      <div
-        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
-      >
-        <h5 class="text-primary fs-1 fw-bold text-uppercase">Hello World</h5>
-        <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
-        <p class="roles text-white text-uppercase fs-4">
-          <span class="fw-bold fs-2">Front-End |</span>
-          <span class="text-primary fw-bold fs-2">React Developer</span>
-        </p>
-        <a href="#about" class="btn btn-primary btn-lg mt-3" id="toggleButton">
-          <div class="d-flex">
-            <div class="me-3">
-              <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="text-start">More About Me</div>
-          </div>
-        </a>
-        <div class="social d-flex position-absolute gap-3">
-          <a
-            href="https://www.facebook.com/profile.php?id=100095685841104"
-            target="_blank"
-          >
-            <i class="fab fa-facebook fa-3x"></i>
-          </a>
-          <a href="https://www.instagram.com/n.bugraer/" target="_blank">
-            <i class="fab fa-instagram fa-3x"></i>
-          </a>
-          <a href="https://twitter.com/nbugraer" target="_blank">
-            <i class="fab fa-twitter fa-3x"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/bu%C4%9Fra-er-904749274/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin fa-3x"></i>
-          </a>
-          <a
-            href="https://www.youtube.com/channel/UCawsrd6dmGcN3X7EFW6DGAA"
-            target="_blank"
-          >
-            <i class="fab fa-youtube fa-3x"></i>
-          </a>
-          <a href="https://github.com/nbugraer" target="_blank">
-            <i class="fab fa-github fa-3x"></i>
-          </a>
-          <a href="https://www.twitch.tv/bugracode" target="_blank">
-            <i class="fab fa-twitch fa-3x"></i>
-          </a>
-        </div>
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand fixed-top  navbar-primary shadow-lg" style="height: 75px;">
+    <div class="container">
+      <div class="navbar-collapse">
+        <ul class="navbar-nav ms-auto me-8 pe-6">
+          <li class="nav-item">
+            <a href="#home" class="nav-link fw-bold pe-3"><i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link fw-bold text-uppercase  nav-it">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link fw-bold text-uppercase  nav-it">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link fw-bold text-uppercase nav-it">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link fw-bold  text-uppercase  nav-it">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="header vh-100 text-center position-relative" id="home">
+    <div
+            class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+    >
+      <h5 class="text-primary fs-1 fw-bold text-uppercase">Hello World</h5>
+      <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
+      <p class="roles text-white text-uppercase fs-4">
+        <span class="fw-bold fs-2">Front-End |</span>
+        <span class="text-primary fw-bold fs-2">React Developer</span>
+      </p>
+      <div class="social d-flex position-absolute gap-3">
+        <a
+                href="https://www.facebook.com/profile.php?id=100095685841104"
+                target="_blank"
+        >
+          <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/n.bugraer/" target="_blank">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://twitter.com/nbugraer" target="_blank">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a
+                href="https://www.linkedin.com/in/bu%C4%9Fra-er-904749274/"
+                target="_blank"
+        >
+          <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+        <a
+                href="https://www.youtube.com/channel/UCawsrd6dmGcN3X7EFW6DGAA"
+                target="_blank"
+        >
+          <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://github.com/nbugraer" target="_blank">
+          <i class="fab fa-github fa-3x"></i>
+        </a>
+        <a href="https://www.twitch.tv/bugracode" target="_blank">
+          <i class="fab fa-twitch fa-3x"></i>
+        </a>
+      </div>
+    </div>
+  </header>
 
     <section id="about" class="about bg-primary py-6">
       <div class="container">
@@ -233,7 +251,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="portfolio py-5 bg-light">
+    <section class="portfolio py-5 bg-light" id="projects">
       <div class="container">
         <div class="text-center mb-5">
           <h4 class="text-uppercase text-primary fw-bold display-5">
@@ -380,7 +398,7 @@
     </section>
 
     <!-- Freelance Section -->
-    <section class="services py-6 position-relative bg-light">
+    <section class="services py-6 position-relative bg-light" id="services">
       <div class="container position-relative">
         <div class="text-center">
           <h4 class="text-uppercase display-5 fw-bold text-primary">
@@ -482,7 +500,7 @@
     </section>
 
     <!-- Contact Section   -->
-    <section class="contact text-bg-primary bg-gradient py-5">
+    <section class="contact text-bg-primary bg-gradient py-5" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
