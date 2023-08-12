@@ -4,7 +4,6 @@ function runTypingEffect() {
   const text = "I am BUGRA ER";
   const typingElement = document.getElementById("typing-text");
   const typingDelay = 175;
-
   typeText(text, typingElement, typingDelay);
 }
 
@@ -62,15 +61,3 @@ for (const icon of serviceIcons) {
     icon.style.transition = "all 0.4s linear";
   });
 }
-
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
-    navbar.style.background = "#ff5757";
-    navbar.style.transition = "all 0.4s linear";
-    navbar.classList.add("navbar-sticky");
-  } else {
-    navbar.style.background = "transparent";
-    navbar.classList.remove("navbar-sticky");
-  }
-});

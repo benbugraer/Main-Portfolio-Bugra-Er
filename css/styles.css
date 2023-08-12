@@ -9,16 +9,6 @@ a {
   text-decoration: none;
 }
 
-/* Navbar Styling */
-.navbar-collapse .nav-it {
-  color: white;
-  transition: all 0.3s linear;
-}
-.navbar-collapse .nav-it:hover {
-  transform: scale(1.2);
-  transition: transform 0.4s ease-in-out;
-}
-
 .fa-brands {
   font-size: 35px;
 }
@@ -159,14 +149,6 @@ a {
 .fa-circle-user {
   color: #F6D092;
 }
-.fa-home {
-  color: white;
-  transition: color 0.3s linear;
-}
-.fa-home:hover {
-  color: #333333;
-  transition: color 0.3s linear;
-}
 
 .footer-social .fab:hover {
   color: white;
@@ -261,16 +243,5 @@ a {
   }
   .header .roles .fs-2 {
     font-size: 10px;
-  }
-  .navbar-collapse .nav-it {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-  }
-  .fa-home {
-    display: flex;
-    align-self: center;
-    justify-content: center;
   }
 }
