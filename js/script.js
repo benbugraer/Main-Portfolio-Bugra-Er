@@ -47,17 +47,3 @@ sociCons.forEach((icon) => {
     icon.classList.remove("fa-shake");
   });
 });
-// Service Icons Hover
-const serviceIcons = document.querySelectorAll(".service-i");
-
-for (const icon of serviceIcons) {
-  icon.addEventListener("mouseover", () => {
-    icon.classList.add("fa-beat");
-    icon.style.transition = "all 0.4s linear";
-  });
-
-  icon.addEventListener("mouseleave", () => {
-    icon.classList.remove("fa-beat");
-    icon.style.transition = "all 0.4s linear";
-  });
-}

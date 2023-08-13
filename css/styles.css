@@ -222,9 +222,6 @@ a {
 }
 
 @media (max-width: 768px) {
-  .header .social i {
-    font-size: 30px;
-  }
   .btn-primary {
     text-align: center;
   }
