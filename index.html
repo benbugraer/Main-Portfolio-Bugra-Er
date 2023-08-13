@@ -11,6 +11,47 @@
     <title>Buğra Er | Front-End Developer</title>
   </head>
   <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light shadow-lg">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <span class="fw-bold text-uppercase text-primary">Buğra Er |</span>
+          <span class="text-dark fw-normal text-uppercase">React Dev</span>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link"
+                ><i class="fa fa-home fw-bold"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="fw-bold nav-link">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="fw-bold nav-link">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a href="#services" class="fw-bold nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="fw-bold nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- Header Section -->
     <header class="header vh-100 text-center position-relative" id="home">
       <div
@@ -32,7 +73,7 @@
             </div>
           </div>
         </a>
-        <div class="social d-flex position-absolute gap-3">
+        <div class="social d-flex position-absolute mb-4 gap-3">
           <a
             href="https://www.facebook.com/profile.php?id=100095685841104"
             target="_blank"
@@ -398,51 +439,34 @@
           </p>
         </div>
         <div class="row text-white mt-5">
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 text-center">
+            <i class="fa-brands fa-css3-alt service-i mb-3"></i>
+            <h3 class="fs-3 h-css">CSS3</h3>
+          </div>
+
+          <div class="col-md-2 text-center">
             <i class="fa-brands fa-sass service-i mb-3"></i>
             <h3 class="fs-3 h-sass">Sass</h3>
-            <hr class="w-30 mx-auto text-primary" />
-            <p class="fs-5 text-dark">
-              I learned Sass after I felt myself with CSS, one of the languages
-              that I really like to write Sass and that I believe has improved
-              me, and I started using Sass in many of my projects.
-            </p>
           </div>
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 text-center">
             <i class="fa-brands fa-bootstrap service-i mb-3"></i>
             <h3 class="fs-3 h-bootstrap">Bootstrap 5</h3>
-            <hr class="w-30 mx-auto text-primary" />
-            <p class="fs-5 text-dark">
-              Bootstrap 5 is the framework I like to use the most, although a
-              lot of people say that Tailwind CSS is better, you can be sure
-              that Bootstrap 5 is enough for freelancers and I will give you
-              this service in the best way.
-            </p>
           </div>
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 text-center">
             <i class="fa-brands fa-js service-i mb-3"></i>
             <h3 class="fs-3 h-js">JavaScript</h3>
-            <hr class="w-30 mx-auto text-primary" />
-            <p class="fs-5 text-dark">
-              There is no limit to what you can do with JavaScript, I use this
-              philosophy when using JavaScript, you can be in much different
-              places in web software with JavaScript, which I use in many
-              projects.
-            </p>
           </div>
 
-          <div class="col-md-3 text-center">
+          <div class="col-md-2 text-center">
             <i class="fa-brands fa-react service-i mb-3"></i>
             <h3 class="fs-3 h-react">React</h3>
-            <hr class="w-30 mx-auto text-primary" />
-            <p class="fs-5 text-dark">
-              React is one of the most important and best software languages
-              that we will use in our projects. By taking full advantage of
-              React technology, we can reveal much more advanced and superior
-              projects.
-            </p>
+          </div>
+
+          <div class="col-md-2 text-center">
+            <i class="fa-brands fa-vuejs service-i mb-3"></i>
+            <h3 class="fs-3 h-vue">Vue.Js</h3>
           </div>
         </div>
       </div>

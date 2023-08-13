@@ -47,3 +47,19 @@ sociCons.forEach((icon) => {
     icon.classList.remove("fa-shake");
   });
 });
+
+// Sticky Top JS
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  const navbar = document.querySelector(".navbar");
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+    navbar.style.transition = "all 0.5s linear";
+  } else {
+    navbar.style.top = "-90px";
+    navbar.style.background = "#fff";
+    navbar.style.transition = "all 0.5s linear";
+  }
+  prevScrollpos = currentScrollPos;
+};

@@ -43,6 +43,12 @@ a {
   &-react {
     color: $react-color;
   }
+  &-css {
+    color: $css-color;
+  }
+  &-vue {
+    color: $vue-color;
+  }
 }
 // Buttons 
 .btn {
@@ -147,6 +153,15 @@ a {
   &-circle-user {
     color: #F6D092;
   }
+  &-home {
+    color: #ff5757;
+    transition: all 0.5s linear;
+    &:hover {
+      color:#333;
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+    }
+  }
 }
 
 .footer-social .fab:hover{
@@ -208,6 +223,16 @@ a {
   color: #333;
   transition: color 0.3s linear;
 }
+// Navbar Links Hover
+.navbar .collapse .navbar-nav .nav-item .nav-link{
+  color: #333;
+  transition: all 0.5s linear;
+  &:hover {
+    color:#ff5757;
+    transform: scale(1.05);
+    transition: transform 0.2s linear;
+  }
+}
 @media  (max-width: 768px) {
 
   .btn-primary {
@@ -228,5 +253,8 @@ a {
   }
   .header .roles .fs-2 {
     font-size: 10px;
+  }
+  #home{
+    padding-bottom: 100px;
   }
 }
