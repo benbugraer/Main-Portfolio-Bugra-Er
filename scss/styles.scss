@@ -233,6 +233,10 @@ a {
     transition: transform 0.2s linear;
   }
 }
+//Placeholder Color
+.form-control::placeholder {
+  color: #fff;
+}
 @media  (max-width: 768px) {
 
   .btn-primary {
@@ -256,5 +260,11 @@ a {
   }
   #home{
     padding-bottom: 100px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .header .social-container {
+    bottom: 0;
   }
 }

@@ -246,6 +246,10 @@ a {
   transition: transform 0.2s linear;
 }
 
+.form-control::placeholder {
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .btn-primary {
     text-align: center;
@@ -268,5 +272,11 @@ a {
   }
   #home {
     padding-bottom: 100px;
+  }
+  .btn {
+    font-size: 15px;
+  }
+  .header .social-container {
+    bottom: 0;
   }
 }
