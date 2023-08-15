@@ -54,10 +54,10 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     navbar.style.top = "0";
     navbar.style.transition = "all 0.4s linear";
-    navbar.style.background = "#ff5757";
+    navbar.style.background = "#fff";
   } else {
     navbar.style.top = "-90px";
-    navbar.style.background = "#ff5757";
+    navbar.style.background = "#fff";
     navbar.style.transition = "all 0.4s linear";
   }
   prevScrollpos = currentScrollPos;

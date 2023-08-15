@@ -154,10 +154,10 @@ a {
     color: #F6D092;
   }
   &-home {
-    color: #333333;
+    color: #ff5757;
     transition: all 0.5s linear;
     &:hover {
-      color:#ffffff;
+      color:#333333;
     transform: scale(1.05);
     transition: transform 0.2s linear;
     }
@@ -225,7 +225,7 @@ a {
 }
 // Navbar Links Hover
 .navbar .collapse .navbar-nav .nav-item .nav-link{
-  color: #ffffff;
+  color: #ff5757;
   transition: all 0.5s linear;
   &:hover {
     color:#333333;
