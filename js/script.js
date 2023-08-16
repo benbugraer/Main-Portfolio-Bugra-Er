@@ -87,5 +87,26 @@ function incrementStats() {
   });
 }
 
+// To Top Button JS
+function toTop() {
+  const toTopBtn = document.getElementById("to-top")
+
+  window.addEventListener("scroll", () => {
+    if(window.scrollY > 50) {
+      toTopBtn.classList.add("show")
+    } else {
+      toTopBtn.classList.remove("show");
+    }
+  })
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Event Listeners
+document.querySelector("#to-top").addEventListener("click", scrollToTop);
+document.addEventListener("DOMContentLoaded", toTop);
 document.addEventListener("DOMContentLoaded", runTypingEffect);
 document.addEventListener("DOMContentLoaded", incrementStats);

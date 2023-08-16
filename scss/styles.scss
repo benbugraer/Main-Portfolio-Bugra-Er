@@ -237,6 +237,36 @@ a {
 .form-control::placeholder {
   color: #fff;
 }
+// To-Top Button
+.to-top-btn {
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #44434a;
+  cursor: pointer;
+  transition: all 0.4s linear;
+
+  &:hover {
+    background-color: #1d1d21;
+  }
+  & img {
+    margin-bottom: 0.25rem;
+    width: 18px;
+  }
+}
+.show {
+  opacity: 1;
+}
+
+
+
 @media  (max-width: 768px) {
 
   .btn-primary {
