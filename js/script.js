@@ -58,7 +58,7 @@ window.onscroll = function () {
   } else {
     navbar.style.top = "-90px";
     navbar.style.background = "#fff";
-    navbar.style.transition = "all 0.4s linear";
+    navbar.style.transition = "all 0.5s linear";
   }
   prevScrollpos = currentScrollPos;
 };
