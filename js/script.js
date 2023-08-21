@@ -74,7 +74,7 @@ function incrementStats() {
       const target = +counter.getAttribute("data-target");
       const c = +counter.innerText;
 
-      const increment = target / 150 ;
+      const increment = target / 125;
 
       if (c < target) {
         counter.innerText = Math.ceil(c + increment);
@@ -89,15 +89,15 @@ function incrementStats() {
 
 // To Top Button JS
 function toTop() {
-  const toTopBtn = document.getElementById("to-top")
+  const toTopBtn = document.getElementById("to-top");
 
   window.addEventListener("scroll", () => {
-    if(window.scrollY > 50) {
-      toTopBtn.classList.add("show")
+    if (window.scrollY > 50) {
+      toTopBtn.classList.add("show");
     } else {
       toTopBtn.classList.remove("show");
     }
-  })
+  });
 }
 
 function scrollToTop() {

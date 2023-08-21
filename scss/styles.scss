@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
 }
+
 .fa-brands {
   font-size: 35px;
 }
@@ -64,12 +65,12 @@ a {
   }
   &-primary:hover {
     background: #ffffff;
-    color:  #ff5757 ;
-    border: 1px solid #ff5757;
+    color:  var(--bs-primary) ;
+    border: 1px solid var(--bs-primary);
   }
   &-outline-primary {
     background: #ffffff;
-    color: #ff5757;
+    color: var(--bs-primary);
     font-size: 25px;
     &:hover {
       color: #ffffff;
@@ -78,9 +79,9 @@ a {
     }
   }
   &-secondary:hover {
-    color: #6fda44;
+    color: #7575F7;
     background: #ffffff;
-    border: 1px solid #6fda44;
+    border: 1px solid #7575F7;
     }
   &-success:hover {
     color: #39ff8b;
@@ -97,25 +98,28 @@ a {
 }
 .fa {
   &-facebook:hover {
-    color:  #3b5998;
+    color: $facebook-color;
   }
   &-instagram:hover {
-    color: #E1306C;
+    color: $instagram-color;
   }
-  &-twitter:hover {
-    color: #1DA1F2;
+  &-x-twitter:hover {
+    color: $twitter-color;
   }
   &-youtube:hover{
-    color: #FF0000;
+    color: $youtube-color;
   }
   &-linkedin:hover {
-    color: #0077b5;
+    color: $linkedin-color;
   }
   &-github:hover {
-    opacity: 0.6;
+    opacity: 0.7;
   }
   &-twitch:hover {
-    color: #6441A4;
+    color: $twitch-color;
+  }
+  &-threads:hover {
+    color: $threads-color;
   }
   &-html5 {
     color: $html-color;
@@ -154,10 +158,10 @@ a {
     color: #F6D092;
   }
   &-home {
-    color: #ff5757;
+    color: var(--bs-secondary);
     transition: all 0.5s linear;
     &:hover {
-      color:#333333;
+      color:var(--bs-primary);
     transform: scale(1.05);
     transition: transform 0.2s linear;
     }
@@ -225,10 +229,10 @@ a {
 }
 // Navbar Links Hover
 .navbar .collapse .navbar-nav .nav-item .nav-link{
-  color: #ff5757;
+  color: var(--bs-secondary);
   transition: all 0.5s linear;
   &:hover {
-    color:#333333;
+    color: var(--bs-primary);
     transform: scale(1.05);
     transition: transform 0.2s linear;
   }
@@ -249,12 +253,12 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: #44434a;
+  background-color: var(--bs-secondary);
   cursor: pointer;
   transition: all 0.4s linear;
 
   &:hover {
-    background-color: #1d1d21;
+    background-color: #4949f9;
   }
   & img {
     margin-bottom: 0.25rem;
