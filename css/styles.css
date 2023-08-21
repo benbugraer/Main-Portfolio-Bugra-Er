@@ -74,7 +74,7 @@ a {
 .btn-outline-primary {
   background: #ffffff;
   color: var(--bs-primary);
-  font-size: 25px;
+  font-size: 17.5px;
 }
 .btn-outline-primary:hover {
   color: #ffffff;
