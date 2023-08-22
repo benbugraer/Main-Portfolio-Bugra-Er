@@ -74,7 +74,7 @@ function incrementStats() {
       const target = +counter.getAttribute("data-target");
       const c = +counter.innerText;
 
-      const increment = target / 125;
+      const increment = target / 100;
 
       if (c < target) {
         counter.innerText = Math.ceil(c + increment);
