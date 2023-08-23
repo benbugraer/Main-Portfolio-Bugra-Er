@@ -8,7 +8,6 @@
 a {
   text-decoration: none;
 }
-
 .fa-brands {
   font-size: 35px;
 }
@@ -158,10 +157,10 @@ a {
     color: #F6D092;
   }
   &-home {
-    color: var(--bs-secondary);
+    color: var(--bs-primary);
     transition: all 0.5s linear;
     &:hover {
-      color:var(--bs-primary);
+      color:var(--bs-secondary);
     transform: scale(1.05);
     transition: transform 0.2s linear;
     }
@@ -229,10 +228,10 @@ a {
 }
 // Navbar Links Hover
 .navbar .collapse .navbar-nav .nav-item .nav-link{
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
   transition: all 0.5s linear;
   &:hover {
-    color: var(--bs-primary);
+    color: var(--bs-secondary);
     transform: scale(1.05);
     transition: transform 0.2s linear;
   }

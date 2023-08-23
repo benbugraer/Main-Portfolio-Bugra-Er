@@ -47,21 +47,23 @@ sociCons.forEach((icon) => {
 });
 
 // Sticky Top JS
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  const navbar = document.querySelector(".navbar");
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+let prevScrollPos = window.pageYOffset;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+
+  if (prevScrollPos > currentScrollPos) {
     navbar.style.top = "0";
-    navbar.style.transition = "all 0.4s linear";
-    navbar.style.background = "#fff";
   } else {
     navbar.style.top = "-90px";
-    navbar.style.background = "#fff";
-    navbar.style.transition = "all 0.5s linear";
   }
-  prevScrollpos = currentScrollPos;
-};
+
+  navbar.style.transition = "all 0.4s linear,  background 0.5s linear";
+  navbar.style.background = "#fff";
+
+  prevScrollPos = currentScrollPos;
+});
 
 // Stats Numbers JS
 function incrementStats() {
@@ -71,17 +73,17 @@ function incrementStats() {
     counter.innerText = 0;
 
     const updateCounter = () => {
-      const target = +counter.getAttribute("data-target");
-      const c = +counter.innerText;
+        const target = +counter.getAttribute("data-target");
+        let c = +counter.innerText;
 
-      const increment = target / 100;
+        const increment = target / 100;
 
-      if (c < target) {
-        counter.innerText = Math.ceil(c + increment);
-        setTimeout(updateCounter, 1);
-      } else {
-        counter.innerText = target;
-      }
+        if (c < target) {
+          counter.innerText = Math.ceil(c + increment);
+          setTimeout(updateCounter, 1);
+        } else {
+          counter.innerText = target;
+        }
     };
     updateCounter();
   });

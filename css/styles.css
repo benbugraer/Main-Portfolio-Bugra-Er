@@ -159,11 +159,11 @@ a {
   color: #F6D092;
 }
 .fa-home {
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
   transition: all 0.5s linear;
 }
 .fa-home:hover {
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   transform: scale(1.05);
   transition: transform 0.2s linear;
 }
@@ -240,11 +240,11 @@ a {
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
-  color: var(--bs-secondary);
+  color: var(--bs-primary);
   transition: all 0.5s linear;
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  color: var(--bs-primary);
+  color: var(--bs-secondary);
   transform: scale(1.05);
   transition: transform 0.2s linear;
 }
