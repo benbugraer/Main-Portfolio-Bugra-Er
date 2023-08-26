@@ -14,7 +14,7 @@ a {
 }
 
 .header {
-  background: #151515 url("../images/intro-bg-4.jpg") no-repeat center center/cover;
+  background: #151515 url("../images/bg-new.jpeg") no-repeat center center/cover;
 }
 
 .header::after {
@@ -50,8 +50,8 @@ a {
 .h-css {
   color: #264de4;
 }
-.h-vue {
-  color: #42b883;
+.h-html {
+  color: #e34c26;
 }
 
 .btn {
@@ -165,7 +165,7 @@ a {
 .fa-home:hover {
   color: var(--bs-dark);
   transform: scale(1.05);
-  transition: transform 0.2s linear;
+  transition: transform 0.3, 5s linear;
 }
 
 .html {
@@ -226,11 +226,12 @@ a {
 }
 
 .copyright span {
+  color: var(--bs-primary);
   transition: color 0.3s linear;
 }
 
 .copyright span:hover {
-  color: var(--bs-primary);
+  color: var(--bs-dark);
   transition: color 0.3s linear;
 }
 
@@ -241,7 +242,7 @@ a {
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   color: var(--bs-dark);
   transform: scale(1.05);
-  transition: transform 0.2s linear;
+  transition: transform 0.3, 5s linear;
 }
 
 .form-control::placeholder {

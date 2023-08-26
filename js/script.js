@@ -1,7 +1,7 @@
 // Add custom JavaScript here
 // Bugra Er Yazısının Geliş Animasyonu
 function runTypingEffect() {
-  const text = "I am BUGRA ER";
+  const text = "Bugra's Space";
   const typingElement = document.getElementById("typing-text");
   const typingDelay = 100;
   typeText(text, typingElement, typingDelay);

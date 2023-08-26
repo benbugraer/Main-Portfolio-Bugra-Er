@@ -12,7 +12,7 @@ a {
   font-size: 35px;
 }
 .header {
-  background: #151515  url("../images/intro-bg-4.jpg") no-repeat center center/cover;
+  background: #151515  url("../images/bg-new.jpeg") no-repeat center center/cover;
 }
 .header::after {
   content: "";
@@ -46,8 +46,8 @@ a {
   &-css {
     color: $css-color;
   }
-  &-vue {
-    color: $vue-color;
+  &-html {
+    color: $html-color;
   }
 }
 // Buttons 
@@ -162,7 +162,7 @@ a {
     &:hover {
       color:var(--bs-dark);
     transform: scale(1.05);
-    transition: transform 0.2s linear;
+    transition: transform 0.3,5s linear;
     }
   }
 }
@@ -216,10 +216,11 @@ a {
   color: #151515;
 }
 .copyright span {
+  color: var(--bs-primary);
   transition: color 0.3s linear;
 }
 .copyright span:hover {
-  color: var(--bs-primary);
+  color: var(--bs-dark);
   transition: color 0.3s linear;
 }
 // Navbar Links Hover
@@ -229,7 +230,7 @@ a {
   &:hover {
     color: var(--bs-dark);
     transform: scale(1.05);
-    transition: transform 0.2s linear;
+    transition: transform 0.3,5s linear;
   }
 }
 //Placeholder Color
