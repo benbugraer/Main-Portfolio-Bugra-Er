@@ -12,22 +12,22 @@
   </head>
   <body>
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-white shadow-lg">
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary shadow-lg">
       <div class="container">
-        <a href="index.html" class="navbar-brand text-primary">
+        <a href="index.html" class="navbar-brand text-white">
           <span class="fw-bold text-uppercase">Buğra Er |</span>
-          <span class="fw-normal text-secondary">Front-End Dev</span>
+          <span class="fw-normal">Front-End Dev</span>
         </a>
         <button
           type="button"
-          class="navbar-toggler"
+          class="navbar-toggler bg-light"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars text-primary"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
@@ -113,12 +113,14 @@
       </div>
     </header>
 
-    <section id="about" class="about bg-primary py-6">
+    <section id="about" class="about text-dark bg-light py-6">
       <div class="container">
         <div class="text-center">
-          <h4 class="text-uppercase fw-bold text-light display-6">About Me</h4>
-          <hr class="w-300 fw-bold mx-auto text-light" />
-          <h2 class="mb-4 text-light">Let me introduce myself.</h2>
+          <h4 class="text-uppercase fw-bold text-primary display-6">
+            About Me
+          </h4>
+          <hr class="w-300 fw-bold mx-auto" />
+          <h2 class="mb-4">Let me introduce myself.</h2>
         </div>
         <div
           class="about-content d-flex flex-column flex-md-row align-items-center gap-5 h-100"
@@ -128,7 +130,7 @@
             class="about-img img-fluid rounded-circle"
             alt="Buğra Er"
           />
-          <p class="lead text-light text-center">
+          <p class="lead text-center">
             Hi, I am Buğra. I am 21 years old and I have been interested in web
             software for about 3-4 months. The programming languages that I use
             during this process and feel comfortable with are
@@ -255,16 +257,6 @@
               aria-valuemin="0"
             >
               <div class="progress-bar react" style="width: 10%"></div>
-            </div>
-
-            <h5><i class="fa-brands fa-vuejs"></i> Vue.JS</h5>
-            <div
-              class="progress mb-4"
-              role="progressbar"
-              aria-valuemax="100"
-              aria-valuemin="0"
-            >
-              <div class="progress-bar vue" style="width: 4%"></div>
             </div>
           </div>
         </div>
@@ -399,7 +391,7 @@
 
     <!-- Fiverr & UpWork Section -->
     <section
-      class="freelance text-white bg-primary bg-gradient pb-7 pt-5 text-center"
+      class="freelance text-dark bg-white bg-gradient pb-7 pt-5 text-center"
     >
       <div class="container">
         <div class="row">
@@ -468,63 +460,23 @@
             <i class="fa-brands fa-react service-i mb-3"></i>
             <h3 class="fs-3 h-react">React</h3>
           </div>
-
-          <div class="col-md-2 text-center">
-            <i class="fa-brands fa-vuejs service-i mb-3"></i>
-            <h3 class="fs-3 h-vue">Vue.Js</h3>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="stats py-6 text-bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-lg-3">
-            <div class="stat text-center border-end border-primary">
-              <i class="fa-solid fa-cubes fa-3x mb-3"></i>
-              <p class="fs-1 counter" data-target="45"></p>
-              <h3 class="fs-6 text-uppercase">Build Projects</h3>
-            </div>
-          </div>
-
-          <div class="col-md-8 col-lg-3">
-            <div class="stat text-center border-end border-primary">
-              <i class="fa-solid fa-clock fa-3x mb-3"></i>
-              <p class="fs-1 counter" data-target="2600"></p>
-              <h3 class="fs-6 text-uppercase">Hourse Worked</h3>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="stat text-center border-end border-primary">
-              <i class="git-hub fab fa-github fa-3x mb-3"></i>
-              <p class="fs-1 counter" data-target="15"></p>
-              <h3 class="fs-6 text-uppercase">Git Hub Respositories</h3>
-            </div>
-          </div>
-          <div class="col-md-8 col-lg-3">
-            <div class="stat text-center">
-              <i class="fab fa-meta fa-3x mb-3"></i>
-              <p class="fs-1 counter" data-target="3"></p>
-              <h3 class="fs-6 text-uppercase">META Certificate</h3>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section   -->
-    <section class="contact text-bg-primary bg-gradient py-5" id="contact">
+    <section
+      class="contact text-bg-light bg-gradient py-5 text-primary"
+      id="contact"
+    >
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <div class="text-center mb-5">
-              <h4 class="text-uppercase display-5 fw-bold text-white">
-                Contact
-              </h4>
-              <hr class="w-35 mx-auto text-white" />
-              <h2 class="mb-4 text-white">You can contact me at any time.</h2>
-              <p class="lead text-white">
+              <h4 class="text-uppercase display-5 fw-bold">Contact</h4>
+              <hr class="w-35 mx-auto" />
+              <h2 class="mb-4">You can contact me at any time.</h2>
+              <p class="lead">
                 If you have any questions or would like to work with me, please
                 contact me.
               </p>
@@ -534,7 +486,7 @@
                 <input
                   name="name"
                   type="text"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-light"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-dark"
                   required
                   placeholder="Enter Your Name"
                 />
@@ -543,7 +495,7 @@
                 <input
                   name="email"
                   type="email"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-light"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-dark"
                   required
                   placeholder="Enter Your Email"
                 />
@@ -552,15 +504,13 @@
                 <textarea
                   name="messages"
                   type="text"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-light"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-dark"
                   required
                   placeholder="Enter Your Messages"
                 ></textarea>
               </div>
               <div class="mb-5 d-grid">
-                <button type="submit" class="btn btn-outline-primary">
-                  Submit
-                </button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
@@ -569,13 +519,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center text-lg-start bg-primary text-white">
+    <footer class="footer text-center text-lg-start bg-white text-dark">
       <div class="container">
         <section
           class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
         >
           <div class="d-none d-lg-block pt-2">
-            <span class="text-uppercase fs-6 text-white"
+            <span class="text-uppercase fs-6"
               >You can contact with me on social media.</span
             >
           </div>
@@ -612,10 +562,10 @@
             </a>
           </div>
         </section>
-        <div class="copyright text-center p-4 text-black">
+        <div class="copyright text-center p-4">
           &copy; 2023 Created and Powered by:
           <a
-            class="text-uppercase fw-bold text-white"
+            class="text-uppercase fw-bold text-dark"
             target="_blank"
             href="https://www.linkedin.com/in/bu%C4%9Fra-er-904749274/"
           >
@@ -627,7 +577,7 @@
 
     <!-- To Top Button -->
     <button id="to-top" class="to-top-btn">
-      <img src="images/up-arrow.png" alt="to-top" />
+      <i class="fa-solid fa-angle-up fa-2x"></i>
     </button>
 
     <script src="js/bootstrap.bundle.min.js"></script>

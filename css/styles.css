@@ -159,18 +159,13 @@ a {
   color: #F6D092;
 }
 .fa-home {
-  color: var(--bs-primary);
+  color: var(--bs-white);
   transition: all 0.5s linear;
 }
 .fa-home:hover {
-  color: var(--bs-secondary);
+  color: var(--bs-dark);
   transform: scale(1.05);
   transition: transform 0.2s linear;
-}
-
-.footer-social .fab:hover {
-  color: white;
-  opacity: 1;
 }
 
 .html {
@@ -235,26 +230,27 @@ a {
 }
 
 .copyright span:hover {
-  color: #333;
+  color: var(--bs-primary);
   transition: color 0.3s linear;
 }
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
-  color: var(--bs-primary);
+  color: var(--bs-white);
   transition: all 0.5s linear;
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  color: var(--bs-secondary);
+  color: var(--bs-dark);
   transform: scale(1.05);
   transition: transform 0.2s linear;
 }
 
 .form-control::placeholder {
-  color: #fff;
+  color: var(--bs-primary);
 }
 
 .to-top-btn {
   position: fixed;
+  color: #fff;
   z-index: 20;
   bottom: 20px;
   right: 20px;
@@ -264,12 +260,12 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: var(--bs-secondary);
+  background-color: #3c3c3c;
   cursor: pointer;
   transition: all 0.4s linear;
 }
 .to-top-btn:hover {
-  background-color: #4949f9;
+  background-color: rgb(158, 158, 158);
 }
 .to-top-btn img {
   margin-bottom: 0.25rem;
@@ -278,6 +274,28 @@ a {
 
 .show {
   opacity: 1;
+}
+
+.footer-social .fa-facebook {
+  color: #3b5998;
+}
+.footer-social .fa-instagram {
+  color: #E1306C;
+}
+.footer-social .fa-threads {
+  color: #333;
+}
+.footer-social .fa-x-twitter {
+  color: #1DA1F2;
+}
+.footer-social .fa-linkedin {
+  color: #0077b5;
+}
+.footer-social .fa-youtube {
+  color: #FF0000;
+}
+.footer-social .fa-github {
+  color: #151515;
 }
 
 @media (max-width: 768px) {
@@ -308,5 +326,8 @@ a {
   }
   .header .social-container {
     bottom: 0;
+  }
+  .services .fa-brands {
+    margin-top: 40px;
   }
 }

@@ -60,34 +60,10 @@ window.addEventListener("scroll", () => {
   }
 
   navbar.style.transition = "all 0.4s linear,  background 0.5s linear";
-  navbar.style.background = "#fff";
+  navbar.style.background = "#ff5757";
 
   prevScrollPos = currentScrollPos;
 });
-
-// Stats Numbers JS
-function incrementStats() {
-  const counters = document.querySelectorAll(".counter");
-
-  counters.forEach((counter) => {
-    counter.innerText = 0;
-
-    const updateCounter = () => {
-        const target = +counter.getAttribute("data-target");
-        let c = +counter.innerText;
-
-        const increment = target / 100;
-
-        if (c < target) {
-          counter.innerText = Math.ceil(c + increment);
-          setTimeout(updateCounter, 1);
-        } else {
-          counter.innerText = target;
-        }
-    };
-    updateCounter();
-  });
-}
 
 // To Top Button JS
 function toTop() {
@@ -111,4 +87,3 @@ function scrollToTop() {
 document.querySelector("#to-top").addEventListener("click", scrollToTop);
 document.addEventListener("DOMContentLoaded", toTop);
 document.addEventListener("DOMContentLoaded", runTypingEffect);
-document.addEventListener("DOMContentLoaded", incrementStats);

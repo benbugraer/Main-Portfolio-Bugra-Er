@@ -157,20 +157,16 @@ a {
     color: #F6D092;
   }
   &-home {
-    color: var(--bs-primary);
+    color: var(--bs-white);
     transition: all 0.5s linear;
     &:hover {
-      color:var(--bs-secondary);
+      color:var(--bs-dark);
     transform: scale(1.05);
     transition: transform 0.2s linear;
     }
   }
 }
 
-.footer-social .fab:hover{
-  color: white;
-  opacity: 1;
-}
 .html {
   background: $html-color;
 }
@@ -223,26 +219,27 @@ a {
   transition: color 0.3s linear;
 }
 .copyright span:hover {
-  color: #333;
+  color: var(--bs-primary);
   transition: color 0.3s linear;
 }
 // Navbar Links Hover
 .navbar .collapse .navbar-nav .nav-item .nav-link{
-  color: var(--bs-primary);
+  color: var(--bs-white);
   transition: all 0.5s linear;
   &:hover {
-    color: var(--bs-secondary);
+    color: var(--bs-dark);
     transform: scale(1.05);
     transition: transform 0.2s linear;
   }
 }
 //Placeholder Color
 .form-control::placeholder {
-  color: #fff;
+  color: var(--bs-primary);
 }
 // To-Top Button
 .to-top-btn {
   position: fixed;
+  color: #fff;
   z-index: 20;
   bottom: 20px;
   right: 20px;
@@ -252,12 +249,12 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: var(--bs-secondary);
+  background-color: #3c3c3c;
   cursor: pointer;
   transition: all 0.4s linear;
 
   &:hover {
-    background-color: #4949f9;
+    background-color: rgb(158, 158, 158);
   }
   & img {
     margin-bottom: 0.25rem;
@@ -268,6 +265,32 @@ a {
   opacity: 1;
 }
 
+// Footer Social Media Style
+.footer-social {
+  .fa {
+    &-facebook {
+      color: $facebook-color;
+    }
+    &-instagram {
+      color: $instagram-color;
+    }
+    &-threads {
+      color: #333;
+    }
+    &-x-twitter {
+      color: $twitter-color;
+    }
+    &-linkedin {
+      color: $linkedin-color;
+    }
+    &-youtube {
+      color: $youtube-color;
+    }
+    &-github {
+      color: #151515
+    }
+  }
+}
 
 
 @media  (max-width: 768px) {
@@ -299,5 +322,8 @@ a {
   }
   .header .social-container {
     bottom: 0;
+  }
+  .services .fa-brands {
+    margin-top: 40px;
   }
 }
