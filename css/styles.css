@@ -59,10 +59,10 @@ a {
 }
 .btn:hover {
   transition: all 0.4s linear;
-  color: #333;
+  color: var(--bs-light);
 }
 .btn-primary:hover {
-  background: #333;
+  background: var(--bs-light);
   color: var(--bs-primary);
   border: 1px solid var(--bs-primary);
 }
@@ -73,12 +73,12 @@ a {
 }
 .btn-outline-primary:hover {
   color: var(--bs-primary);
-  background: var(--bs-dark);
-  border: 1px solid var(--bs-white);
+  background: var(--bs-light);
+  border: 1px solid var(--bs-primary);
 }
 .btn-secondary:hover {
   color: #7575F7;
-  background: #333;
+  background: var(--bs-white);
   border: 1px solid #7575F7;
 }
 .btn-success:hover {
@@ -100,9 +100,6 @@ a {
 .fa-instagram {
   color: #E1306C;
 }
-.fa-x-twitter {
-  color: #14171A;
-}
 .fa-youtube {
   color: #FF0000;
 }
@@ -116,7 +113,7 @@ a {
   color: #FF4500;
 }
 .fa-threads {
-  color: #bc0a45;
+  color: #14171A;
 }
 .fa-html5 {
   color: #e34c26;
@@ -281,9 +278,6 @@ a {
 }
 .footer-social .fa-threads {
   color: #333;
-}
-.footer-social .fa-x-twitter {
-  color: #14171A;
 }
 .footer-social .fa-linkedin {
   color: #0077b5;

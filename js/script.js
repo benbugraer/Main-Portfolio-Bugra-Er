@@ -3,7 +3,7 @@
 function runTypingEffect() {
   const text = "Bugra's Space";
   const typingElement = document.getElementById("typing-text");
-  const typingDelay = 100;
+  const typingDelay = 150;
   typeText(text, typingElement, typingDelay);
 }
 

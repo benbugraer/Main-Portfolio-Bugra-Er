@@ -58,10 +58,10 @@ a {
   border-radius: 100px;
   &:hover {
     transition: all 0.4s linear ;
-    color: #333;
+    color: var(--bs-light);
   }
   &-primary:hover {
-    background: #333;
+    background: var(--bs-light);
     color:  var(--bs-primary) ;
     border: 1px solid var(--bs-primary);
   }
@@ -71,14 +71,14 @@ a {
     font-size: 17.5px;
     &:hover {
       color: var(--bs-primary);
-      background: var(--bs-dark);
-      border: 1px solid var(--bs-white);
+      background: var(--bs-light);
+      border: 1px solid var(--bs-primary);
 
     }
   }
   &-secondary:hover {
     color: #7575F7;
-    background: #333;
+    background: var(--bs-white);
     border: 1px solid #7575F7;
     }
   &-success:hover {
@@ -100,9 +100,6 @@ a {
   }
   &-instagram {
     color: $instagram-color;
-  }
-  &-x-twitter {
-    color: $twitter-color;
   }
   &-youtube {
     color: $youtube-color;
@@ -276,9 +273,6 @@ a {
     }
     &-threads {
       color: #333;
-    }
-    &-x-twitter {
-      color: $twitter-color;
     }
     &-linkedin {
       color: $linkedin-color;
