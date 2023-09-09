@@ -156,7 +156,6 @@ a {
   transition: all 0.5s linear;
 }
 .fa-home:hover {
-  color: var(--bs-dark);
   transform: scale(1.05);
   transition: transform 0.3, 5s linear;
 }
@@ -230,10 +229,9 @@ a {
 
 .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: var(--bs-white);
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-  color: var(--bs-dark);
   transform: scale(1.05);
   transition: transform 0.3, 5s linear;
 }
@@ -254,12 +252,12 @@ a {
   border: none;
   border-radius: 50%;
   outline: none;
-  background-color: #3c3c3c;
+  background-color: var(--bs-primary);
   cursor: pointer;
   transition: all 0.4s linear;
 }
 .to-top-btn:hover {
-  background-color: rgb(158, 158, 158);
+  background-color: #333;
 }
 .to-top-btn img {
   margin-bottom: 0.25rem;

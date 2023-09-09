@@ -1,4 +1,3 @@
-// Add custom JavaScript here
 // Bugra Er Yazısının Geliş Animasyonu
 function runTypingEffect() {
   const text = "Bugra's Space";
@@ -81,7 +80,6 @@ function scrollToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 // Event Listeners
 document.querySelector("#to-top").addEventListener("click", scrollToTop);
 document.addEventListener("DOMContentLoaded", toTop);
